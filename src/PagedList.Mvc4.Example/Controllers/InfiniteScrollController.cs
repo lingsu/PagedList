@@ -24,7 +24,7 @@ namespace PagedList.Mvc4.Example.Controllers
 			return Json(new
 			{
 				names = listPaged.ToArray(),
-				pager = listPaged.GetMetaData()
+				pager = listPaged
 			}, JsonRequestBehavior.AllowGet);
 		}
     }

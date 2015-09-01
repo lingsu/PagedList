@@ -15,10 +15,10 @@ namespace PagedList.Mvc4.Example.Controllers
 			const int pageSize = 2;
 
 			var orders = GetAllOrdersFromDatabase();
-			var pagedOrders = orders.ToPagedList(page ?? 1, pageSize);
+			var pagedOrders = orders.ToPagedList(page ?? 1, pageSize, orders.Count());
 
 			var viewmodel = Mapper.Map<IEnumerable<Order>, IEnumerable<OrderViewModel>>(pagedOrders.ToArray()); // convert all the Orders in the paged list into viewmodels
-			var pagedViewmodel = new StaticPagedList<OrderViewModel>(viewmodel, pagedOrders.GetMetaData()); // reconsitute a new IPagedList containing the viewmodels
+			var pagedViewmodel = new StaticPagedList<OrderViewModel>(viewmodel, pagedOrders); // reconsitute a new IPagedList containing the viewmodels
 
 			return View(pagedViewmodel);
 		}

@@ -41,7 +41,7 @@ namespace PagedList
 		public StaticPagedList(IEnumerable<T> subset, int pageNumber, int pageSize, int totalItemCount)
 			: base(pageNumber, pageSize, totalItemCount)
 		{
-			Subset.AddRange(subset);
+			AddRange(subset);
 		}
 	}
 }
