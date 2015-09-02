@@ -30,7 +30,7 @@ namespace PagedList.Mvc
             CurrentPagerItemTemplate = "<li class='active'>{0}</li>";
             ClassToApplyToFirstListItemInPager = null;
             ClassToApplyToLastListItemInPager = null;
-            UlElementClasses = "pagination";
+            //UlElementClasses = "pagination";
             MaximumPageNumbersToDisplay = 10;
         }
 
