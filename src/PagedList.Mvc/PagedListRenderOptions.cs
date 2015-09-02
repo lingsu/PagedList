@@ -206,7 +206,8 @@ namespace PagedList.Mvc
                     DisplayLinkToFirstPage = PagedListDisplayMode.Never,
                     DisplayLinkToLastPage = PagedListDisplayMode.Never,
                     DisplayLinkToPreviousPage = PagedListDisplayMode.IfNeeded,
-                    DisplayLinkToNextPage = PagedListDisplayMode.IfNeeded
+                    DisplayLinkToNextPage = PagedListDisplayMode.IfNeeded,
+                    Display = PagedListDisplayMode.IfNeeded
                 };
             }
         }
