@@ -194,6 +194,7 @@ namespace PagedList.Mvc
             if (pageIndex == 1)
             {
                 _routeValues.Remove(_pagerOptions.PageIndexParameterName);
+                _viewContext.RouteData.Values.Remove(_pagerOptions.PageIndexParameterName);
             }
             else
             {
