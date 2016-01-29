@@ -65,7 +65,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasePageableModel.cs" />
     <Compile Include="BasePagedList.cs" />
+    <Compile Include="IPageableModel.cs" />
     <Compile Include="IPagedList.cs" />
     <Compile Include="PagedList.cs" />
     <Compile Include="PagedListExtensions.cs" />
