@@ -12,7 +12,7 @@
         /// <summary>
         /// The current page number (starts from 1)
         /// </summary>
-        int PageNumber { get; }
+        int Page { get; }
         /// <summary>
         /// The number of items in each page.
         /// </summary>

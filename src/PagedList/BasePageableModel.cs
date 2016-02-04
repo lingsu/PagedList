@@ -20,16 +20,16 @@ namespace PagedList
         {
             get
             {
-                if (PageNumber > 0)
-                    return PageNumber - 1;
+                if (Page > 0)
+                    return Page;
 
-                return 0;
+                return 1;
             }
         }
         /// <summary>
         /// 
         /// </summary>
-        public int PageNumber { get; set; }
+        public int Page { get; set; }
         /// <summary>
         /// 
         /// </summary>
